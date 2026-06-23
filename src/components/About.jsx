@@ -24,8 +24,8 @@ function Counter({ target, suffix = '' }) {
 }
 
 const stats = [
-  { icon: <FiCode size={24} />, value: 12, suffix: '+', label: 'Projects Completed' },
-  { icon: <FiAward size={24} />, value: 15, suffix: '+', label: 'Technologies Learned' },
+  { icon: <FiCode size={24} />, value: 3, suffix: '+', label: 'Projects Completed' },
+  { icon: <FiAward size={24} />, value: 10, suffix: '+', label: 'Technologies Learned' },
   { icon: <FiCalendar size={24} />, value: 2, suffix: '+', label: 'Years of Learning' },
 ];
 
