@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX, FiDownload } from "react-icons/fi";
 
 export default function CVModal({ isOpen, onClose }) {
-  // Close on Escape key
+  const iframeRef = useRef(null);
+
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") onClose();
@@ -12,7 +13,6 @@ export default function CVModal({ isOpen, onClose }) {
     return () => window.removeEventListener("keydown", handleKey);
   }, [isOpen, onClose]);
 
-  // Prevent background scroll when modal is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -20,11 +20,18 @@ export default function CVModal({ isOpen, onClose }) {
     };
   }, [isOpen]);
 
+  const handleDownload = () => {
+    const iframe = iframeRef.current;
+    if (iframe) {
+      iframe.contentWindow.focus();
+      iframe.contentWindow.print();
+    }
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -39,7 +46,6 @@ export default function CVModal({ isOpen, onClose }) {
             }}
           />
 
-          {/* Modal */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -82,23 +88,15 @@ export default function CVModal({ isOpen, onClose }) {
                   flexShrink: 0,
                 }}
               >
-                <div
+                <span
                   style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.6rem",
+                    fontSize: "1rem",
+                    fontWeight: 700,
+                    color: "var(--text-primary, #f0ede8)",
                   }}
                 >
-                  <span
-                    style={{
-                      fontSize: "1.1rem",
-                      fontWeight: 700,
-                      color: "var(--text-primary, #f0ede8)",
-                    }}
-                  >
-                    Emmanuel Udofot — CV
-                  </span>
-                </div>
+                  Emmanuel Udofot — CV
+                </span>
 
                 <div
                   style={{
@@ -107,9 +105,9 @@ export default function CVModal({ isOpen, onClose }) {
                     alignItems: "center",
                   }}
                 >
-                  <a
-                    href="/cv.pdf"
-                    download
+                  {/*
+                  <button
+                    onClick={handleDownload}
                     className="btn-outline"
                     style={{
                       fontSize: "0.8rem",
@@ -117,10 +115,12 @@ export default function CVModal({ isOpen, onClose }) {
                       display: "flex",
                       alignItems: "center",
                       gap: "0.4rem",
+                      cursor: "pointer",
                     }}
                   >
-                    <FiDownload size={13} /> Download
-                  </a>
+                    <FiDownload size={13} /> Download PDF
+                  </button>
+                  */}
                   <button
                     onClick={onClose}
                     style={{
@@ -149,15 +149,16 @@ export default function CVModal({ isOpen, onClose }) {
                 </div>
               </div>
 
-              {/* PDF Viewer */}
+              {/* CV Viewer */}
               <iframe
-                src="/cv.pdf"
+                ref={iframeRef}
+                src="/cv.html"
                 title="Emmanuel Udofot CV"
                 style={{
                   flex: 1,
                   width: "100%",
                   border: "none",
-                  background: "#fff",
+                  background: "#ffffff",
                 }}
               />
             </div>

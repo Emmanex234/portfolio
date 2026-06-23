@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emmanuel Udofot — CV</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a1a2e;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 2.8rem;
+    }
+
+    /* Header */
+    .header { border-bottom: 2px solid #4f8ef7; padding-bottom: 1rem; margin-bottom: 1.2rem; }
+    .name { font-size: 26px; font-weight: 600; color: #0d1224; letter-spacing: -0.3px; }
+    .role { font-size: 12px; color: #4f8ef7; font-weight: 500; margin: 3px 0 10px; letter-spacing: 0.05em; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 5px 18px; font-size: 11px; color: #555; }
+    .contacts a { color: #4f8ef7; text-decoration: none; }
+
+    /* Section */
+    .sec { margin-bottom: 1.1rem; }
+    .sec-title {
+      font-size: 10px; font-weight: 600; letter-spacing: 0.15em;
+      text-transform: uppercase; color: #4f8ef7;
+      border-left: 3px solid #4f8ef7; padding-left: 7px;
+      margin-bottom: 0.65rem;
+    }
+
+    hr { border: none; border-top: 0.5px solid #e2e8f0; margin: 0 0 1.1rem; }
+
+    /* Profile */
+    .profile { font-size: 12px; color: #444; line-height: 1.75; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .sg { border: 1px solid #e8edf5; border-radius: 6px; padding: 0.55rem 0.75rem; background: #f8faff; }
+    .sg-label { font-size: 10px; color: #888; margin-bottom: 5px; font-weight: 500; }
+    .pills { display: flex; flex-wrap: wrap; gap: 4px; }
+    .pill {
+      font-size: 10px; padding: 2px 8px; border-radius: 100px;
+      background: #e8f0fe; color: #2563eb;
+      border: 1px solid #bdd0fb;
+    }
+
+    /* Entry */
+    .entry { margin-bottom: 0.75rem; }
+    .eh { display: flex; justify-content: space-between; align-items: baseline; }
+    .et { font-size: 13px; font-weight: 600; color: #0d1224; }
+    .ed { font-size: 10px; color: #888; }
+    .es { font-size: 11px; color: #4f8ef7; font-weight: 500; margin: 1px 0 3px; }
+    .eb { font-size: 11.5px; color: #444; }
+    .eb ul { padding-left: 1rem; margin-top: 3px; }
+    .eb li { margin-bottom: 2px; }
+
+    /* Projects */
+    .pcard {
+      border: 1px solid #e2e8f0; border-radius: 7px;
+      padding: 0.65rem 0.85rem; margin-bottom: 0.6rem;
+      background: #fafbff;
+    }
+    .ph { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; }
+    .pt { font-size: 12.5px; font-weight: 600; color: #0d1224; }
+    .ptags { display: flex; gap: 4px; }
+    .ptag {
+      font-size: 10px; padding: 1px 7px; border-radius: 100px;
+      background: #f0ebff; color: #7c3aed;
+      border: 1px solid #d8b4fe;
+    }
+    .pd { font-size: 11.5px; color: #555; }
+    .pd ul { padding-left: 1rem; margin-top: 3px; }
+    .pd li { margin-bottom: 2px; }
+
+    /* Cert */
+    .cert-item { display: flex; align-items: center; gap: 7px; margin-bottom: 0.4rem; }
+    .cdot { width: 5px; height: 5px; border-radius: 50%; background: #4f8ef7; flex-shrink: 0; }
+    .ctext { font-size: 11.5px; color: #444; }
+    .ctext strong { color: #0d1224; font-weight: 600; }
+
+    /* Bottom grid */
+    .bottom-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; }
+    .bi strong { font-size: 10px; color: #888; font-weight: 500; display: block; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .bi span { font-size: 11.5px; color: #333; }
+
+    /* Print */
+    @media print {
+      body { background: white; }
+      .page { padding: 1.5rem 2rem; max-width: 100%; }
+      @page { margin: 1.2cm 1.5cm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <p class="name">Emmanuel Udofot</p>
+    <p class="role">Frontend Developer &nbsp;·&nbsp; React.js Developer &nbsp;·&nbsp; Machine Learning Enthusiast</p>
+    <div class="contacts">
+      <span>📞 09137940204</span>
+      <span>✉ <a href="mailto:emmanueludofot40@gmail.com">emmanueludofot40@gmail.com</a></span>
+      <span>🐙 <a href="https://github.com/Emmanex34">github.com/Emmanex34</a></span>
+      <span>💼 <a href="https://linkedin.com/in/emmanuel-udofot-5b03b1312">linkedin.com/in/emmanuel-udofot</a></span>
+      <span>🌐 <a href="https://portfolio-opal-three-qxl5lftv6u.vercel.app">Portfolio</a></span>
+      <span>📍 Nigeria</span>
+    </div>
+  </div>
+
+  <!-- Profile -->
+  <div class="sec">
+    <p class="sec-title">Professional Profile</p>
+    <p class="profile">Computer Science graduate from the Federal University of Technology Owerri (FUTO) with practical experience building responsive web applications using React.js, JavaScript, Tailwind CSS, and modern frontend technologies. Skilled in designing user-friendly interfaces, integrating APIs, and building full-stack solutions using Supabase. Possesses foundational experience in Machine Learning and NLP through academic and personal projects. Passionate about solving real-world problems through technology.</p>
+  </div>
+
+  <hr>
+
+  <!-- Skills -->
+  <div class="sec">
+    <p class="sec-title">Technical Skills</p>
+    <div class="skills-grid">
+      <div class="sg">
+        <p class="sg-label">Frontend</p>
+        <div class="pills">
+          <span class="pill">React.js</span>
+          <span class="pill">JavaScript ES6+</span>
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Framer Motion</span>
+          <span class="pill">Responsive Design</span>
+        </div>
+      </div>
+      <div class="sg">
+        <p class="sg-label">Backend &amp; Database</p>
+        <div class="pills">
+          <span class="pill">Python</span>
+          <span class="pill">Flask</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">REST APIs</span>
+        </div>
+      </div>
+      <div class="sg">
+        <p class="sg-label">Machine Learning</p>
+        <div class="pills">
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">TF-IDF</span>
+          <span class="pill">Logistic Regression</span>
+          <span class="pill">NLP</span>
+        </div>
+      </div>
+      <div class="sg">
+        <p class="sg-label">Tools</p>
+        <div class="pills">
+          <span class="pill">Git &amp; GitHub</span>
+          <span class="pill">VS Code</span>
+          <span class="pill">Vite</span>
+          <span class="pill">Joblib</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Education -->
+  <div class="sec">
+    <p class="sec-title">Education</p>
+    <div class="entry">
+      <div class="eh">
+        <span class="et">B.Sc. Computer Science</span>
+        <span class="ed">2020 — 2025</span>
+      </div>
+      <p class="es">Federal University of Technology Owerri (FUTO)</p>
+      <div class="eb"><ul>
+        <li>Focused on Software Engineering and Web Development</li>
+        <li>Final year project: Nigerian Hate Speech Detection System using ML</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- SIWES -->
+  <div class="sec">
+    <p class="sec-title">Industrial Training (SIWES)</p>
+    <div class="entry">
+      <div class="eh">
+        <span class="et">Mobile App Development Intern</span>
+        <span class="ed">2024</span>
+      </div>
+      <p class="es">Omney Payment Limited, Owerri</p>
+      <div class="eb"><ul>
+        <li>Assisted in mobile application development projects</li>
+        <li>Participated in software testing and debugging activities</li>
+        <li>Collaborated with development teams on application features</li>
+        <li>Gained practical experience in software development workflows and industry practices</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Projects -->
+  <div class="sec">
+    <p class="sec-title">Projects</p>
+
+    <div class="pcard">
+      <div class="ph">
+        <span class="pt">Nigerian Hate Speech Detection System</span>
+        <div class="ptags"><span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">Scikit-learn</span></div>
+      </div>
+      <div class="pd"><ul>
+        <li>ML web app detecting hate speech in Nigerian English and Pidgin text</li>
+        <li>Implemented TF-IDF vectorization and Logistic Regression — ~90% accuracy</li>
+        <li>Integrated a user feedback mechanism for continuous model improvement</li>
+      </ul></div>
+    </div>
+
+    <div class="pcard">
+      <div class="ph">
+        <span class="pt">CryptoKit — Hash, Encrypt &amp; Decrypt</span>
+        <div class="ptags"><span class="ptag">JavaScript</span><span class="ptag">CryptoJS</span><span class="ptag">Tailwind</span></div>
+      </div>
+      <div class="pd"><ul>
+        <li>Browser-based toolkit supporting AES, DES, MD5, SHA-256, SHA-512 and more</li>
+        <li>Fully client-side processing — no data transmitted to any server</li>
+      </ul></div>
+    </div>
+
+    <div class="pcard">
+      <div class="ph">
+        <span class="pt">Personal Developer Portfolio</span>
+        <div class="ptags"><span class="ptag">React.js</span><span class="ptag">Tailwind</span><span class="ptag">Framer Motion</span></div>
+      </div>
+      <div class="pd"><ul>
+        <li>Modern portfolio with glassmorphism dark theme and animated UI components</li>
+        <li>Dark/light toggle, EmailJS contact form, and CV viewer modal</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Certifications -->
+  <div class="sec">
+    <p class="sec-title">Certifications</p>
+    <div class="cert-item"><div class="cdot"></div><p class="ctext"><strong>Responsive Web Design</strong> — Wedigraf Technologies, Uyo</p></div>
+    <div class="cert-item"><div class="cdot"></div><p class="ctext"><strong>Frontend Development</strong> — Wedigraf Technologies, Uyo</p></div>
+    
+  </div>
+
+  <hr>
+
+  <!-- Additional Info -->
+  <div class="sec">
+    <p class="sec-title">Additional Information</p>
+    <div class="bottom-grid">
+      <div class="bi"><strong>Nationality</strong><span>Nigerian</span></div>
+      <div class="bi"><strong>NYSC Status</strong><span>Awaiting Mobilization</span></div>
+      <div class="bi"><strong>Languages</strong><span>English, Nigerian Pidgin</span></div>
+    </div>
+  </div>
+
+  <hr>
+  <p style="font-size:10px;color:#aaa;text-align:center;">References available upon request</p>
+
+</div>
+</body>
+</html>

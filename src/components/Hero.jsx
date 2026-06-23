@@ -10,7 +10,7 @@ import CVModal from "./CVmodal";
 const socialLinks = [
   {
     icon: <FaGithub size={18} />,
-    href: "https://github.com/Emmanex34",
+    href: "https://github.com/Emmanex234",
     label: "GitHub",
   },
   {
