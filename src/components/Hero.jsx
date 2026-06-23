@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { FiEye, FiArrowRight } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import CVModal from "./CVModal";
+import CVModal from "./CVmodal";
 
 const socialLinks = [
   {
