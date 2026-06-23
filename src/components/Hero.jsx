@@ -5,23 +5,27 @@ import { Link } from "react-scroll";
 import { FiEye, FiArrowRight } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import CVModal from "../components/CVModal";
+import CVModal from "./CVModal";
 
 const socialLinks = [
   {
     icon: <FaGithub size={18} />,
-    href: "https://github.com/",
+    href: "https://github.com/Emmanex34",
     label: "GitHub",
   },
   {
     icon: <FaLinkedinIn size={18} />,
-    href: "https://linkedin.com/",
+    href: "https://linkedin.com/in/emmanuel-udofot-5b03b1312",
     label: "LinkedIn",
   },
-  { icon: <FaWhatsapp size={18} />, href: "https://wa.me/", label: "WhatsApp" },
+  {
+    icon: <FaWhatsapp size={18} />,
+    href: "https://wa.me/+2349037195528",
+    label: "WhatsApp",
+  },
   {
     icon: <HiOutlineMail size={18} />,
-    href: "mailto:udofot@example.com",
+    href: "mailto:emmanueludofot@gmail.com",
     label: "Email",
   },
 ];
