@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaFigma, FaBootstrap
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaFigma, FaBootstrap, FaPython
 } from 'react-icons/fa';
 import { SiTailwindcss, SiFirebase, SiSupabase } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
@@ -14,7 +14,7 @@ const skillGroups = [
       { name: 'JavaScript', icon: <FaJs />, level: 82, color: '#f7df1e' },
       { name: 'React.js', icon: <FaReact />, level: 85, color: '#61dafb' },
       { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 88, color: '#38bdf8' },
-      { name: 'Bootstrap', icon: <FaBootstrap />, level: 80, color: '#7952b3' },
+      { name: 'Python', icon: <FaPython />, level: 80, color: '#3b82f6' },
     ],
   },
   {
@@ -23,16 +23,10 @@ const skillGroups = [
       { name: 'Git', icon: <FaGitAlt />, level: 78, color: '#f05032' },
       { name: 'GitHub', icon: <FaGithub />, level: 80, color: '#fff' },
       { name: 'VS Code', icon: <VscCode />, level: 90, color: '#007acc' },
-      { name: 'Figma', icon: <FaFigma />, level: 72, color: '#f24e1e' },
+      
     ],
   },
-  {
-    category: 'Backend & Database',
-    skills: [
-      { name: 'Supabase', icon: <SiSupabase />, level: 70, color: '#3ecf8e' },
-      { name: 'Firebase', icon: <SiFirebase />, level: 75, color: '#ffa000' },
-    ],
-  },
+  
 ];
 
 function SkillCard({ skill, index }) {

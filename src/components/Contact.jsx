@@ -6,10 +6,34 @@ import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
 const contactInfo = [
-  { icon: <HiOutlineMail size={20} />, label: 'Email', value: 'udofot@example.com', href: 'mailto:udofot@example.com', color: '#4f8ef7' },
-  { icon: <FaLinkedinIn size={20} />, label: 'LinkedIn', value: 'linkedin.com/in/udofot', href: 'https://linkedin.com/', color: '#0a66c2' },
-  { icon: <FaGithub size={20} />, label: 'GitHub', value: 'github.com/udofot', href: 'https://github.com/', color: '#fff' },
-  { icon: <FaWhatsapp size={20} />, label: 'WhatsApp', value: '+234 000 000 0000', href: 'https://wa.me/', color: '#25d366' },
+  {
+    icon: <HiOutlineMail size={20} />,
+    label: "Email",
+    value: "emmanueludofot40@gmail.com",
+    href: "mailto:emmanueludofot40@gmail.com",
+    color: "#4f8ef7",
+  },
+  {
+    icon: <FaLinkedinIn size={20} />,
+    label: "LinkedIn",
+    value: "linkedin.com/in/emmanuel-udofot-5b03b1312",
+    href: "https://www.linkedin.com/in/emmanuel-udofot-5b03b1312",
+    color: "#0a66c2",
+  },
+  {
+    icon: <FaGithub size={20} />,
+    label: "GitHub",
+    value: "github.com/udofot",
+    href: "https://github.com/",
+    color: "#fff",
+  },
+  {
+    icon: <FaWhatsapp size={20} />,
+    label: "WhatsApp",
+    value: "+234 903 719 5528",
+    href: "https://wa.me/+2349037195528",
+    color: "#25d366",
+  },
 ];
 
 const inputStyle = {

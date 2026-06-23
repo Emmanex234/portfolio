@@ -20,18 +20,6 @@ const services = [
     description: 'Full React app development with state management, routing, API integration, and authentication flows.',
     color: '#22d3ee',
   },
-  {
-    icon: <FiLayout size={28} />,
-    title: 'UI from Figma',
-    description: 'Translating Figma or Adobe XD mockups into production-ready, interactive React components with precision.',
-    color: '#f59e0b',
-  },
-  {
-    icon: <FiTool size={28} />,
-    title: 'Website Maintenance',
-    description: 'Ongoing support, performance optimisation, bug fixes, and feature additions for existing web projects.',
-    color: '#10b981',
-  },
 ];
 
 export default function Services() {

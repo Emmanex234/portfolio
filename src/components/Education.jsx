@@ -46,7 +46,7 @@ export default function Education() {
                   <FiAward size={13} /> Second Class Upper
                 </span>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.82rem', padding: '0.3rem 0.8rem', borderRadius: '100px', background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)', color: 'var(--accent-purple)' }}>
-                  <FiCalendar size={13} /> Graduated 2024
+                  <FiCalendar size={13} /> Graduated 2025
                 </span>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Education() {
                 Continuous self-study through online courses, documentation, and real project building. Focused on React ecosystem, modern CSS, and developer tooling.
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem' }}>
-                {['React Docs', 'FreeCodeCamp', 'YouTube', 'Projects'].map(src => (
+                {['Wedigraf Tech','React Docs','YouTube', 'Projects'].map(src => (
                   <span key={src} style={{ fontSize: '0.73rem', padding: '0.25rem 0.65rem', borderRadius: '100px', background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)', color: 'var(--accent-purple)' }}>
                     {src}
                   </span>

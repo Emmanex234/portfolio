@@ -5,9 +5,9 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const socials = [
   { icon: <FaGithub size={18} />, href: 'https://github.com/', label: 'GitHub' },
-  { icon: <FaLinkedinIn size={18} />, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { icon: <FaWhatsapp size={18} />, href: 'https://wa.me/', label: 'WhatsApp' },
-  { icon: <HiOutlineMail size={18} />, href: 'mailto:udofot@example.com', label: 'Email' },
+  { icon: <FaLinkedinIn size={18} />, href: 'https://www.linkedin.com/in/emmanuel-udofot-5b03b1312', label: 'LinkedIn' },
+  { icon: <FaWhatsapp size={18} />, href: 'https://wa.me/+2349037195528', label: 'WhatsApp' },
+  { icon: <HiOutlineMail size={18} />, href: 'mailto:emmanueludofot40@gmail.com', label: 'Email' },
 ];
 
 const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Services', 'Education', 'Contact'];
